@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docs in a Row Services</title>
+    <title>Crystal's Services</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Docs in a Row Services</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="nav-flex">
+            <div class="stated"><strong>CRYSTAL'S SERVICES.</strong></div>
+            <div class="nav">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="#properties" class="nav-item">Properties</a>
+                <a href="#agents" class="nav-item">Agents</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="#news" class="nav-item">News</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </div>
+        </div>
     </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+    </script>
+    <section>
+        <div class="landing-flex">
+            <div class="landing-text">Buy and sell real estate properties<br></div>
+            <div class="landing-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+    </section>
+    <br>
     <section id="about">
         <h2>About Us</h2>
         <p>Information about the company.</p>
@@ -26,6 +42,13 @@
         <input type="number" id="wonAmount" placeholder="Enter amount in Won">
         <button onclick="wonToDollars()">Convert</button>
         <p id="result"></p>
+    </section>
+    <section class="section1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisl diam, finibus a dignissim pharetra, rhoncus vitae elit. Nulla imperdiet sem nisi, ac auctor arcu dignissim in. Donec at tristique lectus, nec lacinia odio. Vivamus aliquet nunc et odio egestas imperdiet. Nunc quis dui libero. Nullam vitae risus volutpat nunc facilisis mattis ut vitae nulla. Quisque eget massa viverra, porta dui non, elementum lacus. Donec pulvinar, augue quis auctor dapibus, nunc nisi commodo mi, et semper lorem ligula eget dolor. Nulla tempor velit arcu, a dictum sem sollicitudin non. Curabitur vel suscipit nisl. Sed convallis cursus pretium. Etiam commodo molestie risus eu blandit. Donec euismod tristique magna eget congue. Duis pellentesque, ligula quis tristique lacinia, nisi enim egestas arcu, quis ullamcorper massa turpis ac enim.
+        Vestibulum dapibus tellus vitae enim vehicula fringilla. Cras congue dictum viverra. Vivamus eu eros sit amet neque malesuada cursus. Fusce porta hendrerit nunc id pellentesque. Ut vitae neque feugiat, laoreet tellus id, convallis quam. Phasellus dapibus id sapien at lobortis. Nam congue diam est, id pulvinar nulla volutpat et.
+        Duis fringilla sit amet lectus ac efficitur. In nec dui scelerisque, imperdiet diam non, malesuada ipsum. Etiam auctor, nunc hendrerit placerat molestie, metus elit cursus dolor, vitae facilisis mauris quam egestas urna. Curabitur nec scelerisque purus. Nam scelerisque commodo lacus. Fusce malesuada consequat volutpat. Nunc in urna arcu. Nunc augue tellus, dapibus at molestie sed, dictum nec elit. Nunc dignissim congue est eget tincidunt. Sed metus lacus, auctor ut convallis sed, mollis vel velit. Proin faucibus erat nec odio pretium, et euismod ligula varius. Phasellus pharetra ullamcorper dictum.
+        Nam nec euismod diam, interdum posuere urna. Donec vitae egestas velit. Curabitur ut diam ex. Pellentesque interdum metus ut mollis malesuada. Mauris elementum orci nec dolor vestibulum, vestibulum ullamcorper metus fermentum. Nunc fringilla lacus venenatis, suscipit diam et, faucibus mauris. Donec in sagittis ipsum, id vestibulum purus. Curabitur vitae eros lacus. Nulla ultricies tortor eget purus eleifend ornare ac quis ipsum. Quisque lobortis viverra ipsum. Aliquam bibendum, est non consectetur semper, eros sem imperdiet eros, at lobortis augue mauris sit amet ligula. Pellentesque semper erat in mattis faucibus. Nullam sit amet ultrices urna, eu faucibus ante.
+        Nullam in porta odio. Aenean volutpat, nulla id tincidunt porttitor, nisi ligula aliquet eros, vitae rutrum quam massa quis tortor. Nulla interdum aliquam malesuada. Integer vel ultricies enim. In mollis erat magna, eu porta justo aliquam vitae. Vivamus in lectus interdum, placerat augue sit amet, sagittis sapien. Duis commodo turpis id scelerisque rutrum.
     </section>
     <section id="services">
         <h2>Our Services</h2>
@@ -40,7 +63,7 @@
         <p>Contact information.</p>
     </section>
     <footer>
-        <p>&copy; 2024 Docs in a Row Services</p>
+        <p>&copy; Crystal's Services</p>
     </footer>
     <script src="script.js"></script>
 </body>

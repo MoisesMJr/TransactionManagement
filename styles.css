@@ -1,13 +1,121 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+
+body{
+    font-family: "Roboto","Helvectica","Sans-serif";
+    margin: 0px;
     padding: 0;
+    font-weight: 400;
+    color:#777;
+    line-height: 1.7;
 }
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+
+.header {
+    height: 160px;
+    padding: 10px 16px;
+    color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
+.header a:hover{
+    color: white;
+    transition: .3s;
+}
+.header.sticky{
+    height: 75px;
+    padding: 10px 16px;
+    background-color: white ;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.308);
+}
+.header.sticky a:hover{
+    color: rgb(241, 128, 53);
+    transition: 0.3s;
+}
+.header.sticky a{
+    color: black;
+}
+.header.sticky .stated{
+    color:black;
+}
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.stated{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 250px;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    
+}
+.nav-item{
+    color: gray;
+    text-decoration: none;
+    margin: 10px;
+} 
+.landing-flex{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    background-image: linear-gradient(rgba(34, 30, 30, 0.705), rgba(34, 30, 30, 0.705)),
+                        url('images/background.jpg');
+    background-attachment: fixed;
+}
+.landing-flex-about{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    background-color: #5e0b15;
+    padding-top: 3rem;
+
+}
+.landing-text{
+    font-size: 50px;
+    width: 500px;
+    color: white;
+}
+.landing-text2{
+    font-size: 20px;
+    width: 500px;
+    color: white;
+}
+----------------------------------------------------
+.about-header {
+    background-color: #f4f4f4; /* Light gray or soft color */
+    padding: 20px;
+    text-align: center;
+}
+.about-header {
+background: linear-gradient(to bottom, #5e0b15, #f4f4f4);
+padding: 50px;
+text-align: center;
+color: white; /* Adjust text color for contrast */
+}
+.about-content {
+padding: 20px;
+}
+----------------------------------------------------
+
 nav ul {
     list-style: none;
     display: flex;
@@ -17,15 +125,127 @@ nav a {
     color: #fff;
     text-decoration: none;
 }
-section {
-    padding: 2rem;
+
+
+.section1 {
+    padding: 2rem 7rem 0rem 7rem;
+} 
+.side-by-side{
+    display: flex;
 }
+.agent-words{
+    padding: 10px;
+}
+
+.favorites {
+    text-align: center;
+    margin: 40px 20px;
+  }
+  
+  .favorite-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between items */
+    margin-top: 20px;
+  }
+  
+  .favorite-items div {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+.contact-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-item-left{
+    height: 700px;
+    width: 60%;
+    margin-right: 20px;
+    background-color: white;
+}
+.contact-item-left p{
+    margin-left: 30px;
+    color: black;
+    margin-top: 20px;
+}
+.contact-item-right{
+    height: 280px;
+    width: 40%;
+    margin-left: 20px;
+    background-color: white;
+}
+.address1{
+    margin: 0 10px;
+    color: gray;
+    font-size: 18px;
+}
+.address3{
+    margin: 0 10px;
+    color: rgb(241, 128, 53);
+    font-size: 18px;
+    text-decoration: none;
+}
+.address3:hover{
+    text-decoration: underline;
+}
+
+.address{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(92, 92, 92);
+}
+.contact-item-title{
+    color: black;
+    font-size: 30px;
+    margin-left: 30px;
+}
+input{
+    width: 90%;
+    font-size: 15px;
+    margin-left: 30px;
+    border-radius: 50px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+textarea{
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    width: 90%;
+    margin-left: 30px;
+    height: 200px;
+    font-size: 15px;
+    padding: 10px;
+}
+.send{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.section-margin-services2{
+    padding: 0 40px;
+    background-color: rgba(238, 238, 238, 0.89);
+    height: 950px;
+}
+.service-title2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+
+
+
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: fixed;
     width: 100%;
     bottom: 0;
+    position: relative;
+    bottom: auto;
 }
